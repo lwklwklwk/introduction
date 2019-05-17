@@ -1,4 +1,8 @@
 module.exports ={
   publicPath:'./',
-  outputDir:'./docs'
+  outputDir:'./docs',
+  devServer:{
+    hot:true,
+    open:true
+  }
 }
