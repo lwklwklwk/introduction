@@ -1,16 +1,18 @@
 <template>
   <div>
     <Head></Head>
+    <Main></Main>
   </div>
 </template>
 
 <script>
 import Head from './view/Head.vue'
-
+import Main from './view/Main.vue'
 export default {
   name: 'app',
   components: {
-    Head
+    Head,
+    Main
   }
 }
 </script>
@@ -27,11 +29,16 @@ export default {
   }
 } */
 .half-screen{
+  margin: 2vh 2vw 0 2vw;
   height: 50vh;
-  border-radius: .6rem;
-  background-color: aquamarine;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.children-center{
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 </style>

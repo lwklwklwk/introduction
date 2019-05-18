@@ -1,47 +1,36 @@
 <template>
-  <div class="half-screen">
-    <h1>可疑的团子</h1> 
-    <div class="center-box">
-      <div class="head-info">
-        <img class="head-pic"  src="../assets/logo.png" >
-        <lwk-list :mainInfo="mainInfo"></lwk-list>        
-      </div>
-
-    </div>
+  <div class="half-screen head-box" >
+    <div class="introduce">你好，我是可疑的团子，</div>
+    <div class="small-introduce">现住于广州</div>
+    <div class="introduce">一个前端工程师。</div>
+    <div class="small-introduce">也懂一点后端~</div>
   </div>
 </template>
 <script>
-import lwkList from '../components/lwkList.vue'
+
 export default {
   components: {
-    lwkList
+  
   },
   data(){
     return {
-      mainInfo:[{label:"姓名",value:"lwk"},{label:"电话",value:"15602341972"},{label:"邮箱",value:"scau_lwk@163.com"}]
     }
   }
 }
 </script>
 
 <style scoped>
-
-.center-box{
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid ; */
-  padding: 2vh;
-  box-sizing: border-box;
-}@media screen and (min-width: 0px) and (max-width: 900px){
-
+.head-box{
+  flex-direction: column
 }
-.head-pic{
-  height: 100%;
-  width: 30%;
-  margin-right:5%; 
-  border: 1px solid;
+.introduce{
+  width: 50vw;
+  color: #444;
+  font-size: 3vw;
 }
-.head-info{
-  display: flex;
+.small-introduce{
+  width: 50vw;
+  color: #ccc;
+  font-size:1.5vw
 }
 </style>
