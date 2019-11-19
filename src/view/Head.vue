@@ -26,11 +26,11 @@ export default {
 .introduce{
   width: 50vw;
   color: #444;
-  font-size: 3vw;
+  font-size: 3rem;
 }
 .small-introduce{
   width: 50vw;
   color: #ccc;
-  font-size:1.5vw
+  font-size:1.5rem
 }
 </style>
